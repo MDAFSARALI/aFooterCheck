@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+#particles-js{
+    height: 100%;
+    position: fixed;
+    width: 100vw;
+
+}
+.mainFoot{
+    width: 100%;
+    top: 0;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    bottom: 0;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+    /* opacity: 0; */
+    transform: translateX(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 20;
+}
+
+.footer-column ul li a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: center;
+}
+.footer-column ul li a > img{
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-column ul li a:hover {
+    color: red;
+    font-weight: 700;
+    scale: (1.5);
+    z-index: 50;
+}
+
+.footer-social {
+    margin: 20px 0;
+    
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.5);
+    filter: grayscale(0%);
+}
+.facebook:hover{
+    color: #0165E1;
+}
+.instagram:hover{
+    color: #C13584;
+}
+.twitter:hover{
+    color: #08a0e9;
+}
+.youtube:hover{
+    color: red;
+}
+
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.footer-column ul:hover li {
+    opacity: 1;
+    transform: translateX(0);
+}
+.moving_items p{
+    color: white;
+    text-align: center;
+}
+
+.footer{
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .mainFoot{
+        position: relative;
+        overflow: scroll;
+        margin-top: 5vh;
+        height: auto;
+        overflow: visible;
+    }
+    .footer-links{
+        text-align: center;
+    }
+    .social-icon{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        z-index: 100;
+        display: flex;
+    }
+    
+}
+
+
